@@ -36,6 +36,7 @@ a {
 }
 
 .header a {
+    font-size: 1.3rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
