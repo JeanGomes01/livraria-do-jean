@@ -4,78 +4,104 @@
 <head>
     <link rel=stylesheet type=text/css href="src/styles.css">
     <meta http-equiv="X-U-A  compatible" content="ie=edge-" />
-    <meta name="viewport" content="width-device-width ,initial scale=1.0" />
     <meta charset="UTF-8" />
+    <title>Livraria do Jean</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="/">Livraria do Jean</a>
-        <nav>
-            <ul class="menu">
-                <li><a href="/">Livros recomendados</a> </a>
-                </li>
-                <li><a href="/">Livros Mais vendidos</a> </a>
-                </li>
-                <li><a href="#Dica">Dicas de Livros</a> </a>
-                </li>
-                <li><a href="/">Contatos</a> </a>
-                </li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
+    <header class="container">
+        <div class="logo">
+            <a>Livraria do Jean</a>
+        </div>
+        <div class="menu">
+
+            <a href="">
+                Home
+            </a>
+            <a href="#dicas">
+                Livros recomendados
+            </a>
+            <a href="">
+                Livros mais vendidos
+            </a>
+            <a href="">
+                Contatos
+            </a>
+            <a href="">
+                Sobre
+            </a>
+        </div>
+        <!--menu-->
     </header>
-    <section class="flex">
+    <!--container-->
+
+    <section class="img-banner">
         <div>
-            <img src="img/download (2).jpg">
+            <img src="/img/banner-livros.jpg" alt="Banner de livro">
         </div>
     </section>
+    <!--img-banner-->
 
-
-    <h1>Dicas de Leitura</h1>
-    <a name="Dica">
-        <section class="flex1">
+    <section class="sessao-dicas" id="dicas">
+        <h1>Dicas de Leitura</h1>
+        <div class="dicas-img">
             <div>
-                <img src="img/transferir.jpg" width="200" height="300" alt="A capa do livro a morte e vida de Charlie Cloud" />
-                <br/>
+                <img src="img/transferir.jpg">
                 <p>A Morte e vida de Charlie Cloud</p>
             </div>
             <div>
-                <img src="img/img(3).jpg" width="200" alt="A capa do Livro Harry Potter e a Câmara " />
-                <br/>
-                <p>Um capricho dos deuses</p>
-
-            </div>
-            <div>
-                <img src="img/img(2).jpg" width="200" height="300" alt="A capa do livro O Discípulo Radical" />
-                <br/>
-                <p>Jesus, o maior psicólogo que já existiu.
-                </p>
+                <img src="img/img(3).jpg">
+                <p>um capricho dos Deuses</p>
             </div>
 
             <div>
-                <img src="img/downloadjean.jpg" width="200" height="300" alt=" A capa do livro A Cabana" />
-                <br/>
+                <img src="img/img(2).jpg">
+                <p>Jesus o Maior Psicólogo que já existiu</p>
+            </div>
+
+            <div>
+                <img src="img/downloadjean.jpg">
                 <p>A Cabana</p>
             </div>
+
             <div>
-                <img src="img/download03.jpg" width="200" height="300" alt="A capa do livro Nunca desista dos seus sonhos" />
-                <br/>
-                <p>Nunca desista dos seus sonhos</p>
+                <img src="img/download03.jpg">
+                <p>Nuca desista dos seus sonhos</p>
             </div>
+
             <div>
-                <img src="img/download10.jpg" width="200" height="300" alt="A capa do livro O Doador de Memórias" />
-                <br/>
-                <p>O Doador de Memórias</p>
+                <img src="img/download10.jpg">
+                <p>O doador de memórias</p>
             </div>
-        </section>
+
+        </div>
+    </section>
+    <!--sessao-dicas-->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2019 - Todos os direitos reservados
+            </p>
+            <div class="redes-sociais">
+                <ul>
+                    <li><a href="https://www.facebook.com/jeangomes13/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/jean_gms/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/Jean_gms01" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <!--social-list-->
+
+        </div>
+        <!--footer-content-->
+    </footer>
+    <!--footer-->
+
 </body>
-<footer class="footer">
-    <nav>
-        <ul>
-            <a href="/">Livros recomendados | </a> <a href="/">Livros mais vendidos | </a> <a href="/">Dicas de livros | </a> <a href="/">Contatos</a><a href="/">Sobre |</a>
-        </ul>
-    </nav>
-</footer>
+
 
 </html>
