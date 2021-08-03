@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Nav menu*/
+/*Estrutura de Menu */
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(45deg, #a7a7a7, #17181b);    
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+
+
+
+.container {
+    width:100%;
+    height:100vh;
+}
+
+
+
+.img-banner {
+    width:100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+.img-banner img {
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    border: 2px solid black;
+}
+
+
+.sessao-dicas {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-bottom: 15rem;
+}
+
+.dicas-img {
+    width: 100%;
+    height: 100vh;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4rem;
+}
+
+
+.dicas-img img {
+    box-shadow: 2px solid black;
+    margin: 10%;
+    width: 40%;
+    height: 40vh;
+}
+
+.dicas-img img:hover {
+    border: 10px solid blue;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.4s;
+}
+
+footer {
+    margin-top: 10rem;
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.redes-sociais a {
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.redes-sociais ul {
+    display: flex;
+    list-style: none;
+}
+
+
+@media screen and (max-width:650px){
+    
+    /*Nav Menu*/
+    #btn-mobile {
+        display: block;
+    }
+
+    #menu {
+        display:block;
+        position: absolute;
+        width:100%;
+        top:70px;
+        right:0;
+        background:#a7a7a7;
+        height: 0px;
+        transition: all .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: auto;
+
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0, .05);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburger {
+        border-top: 2px solid;
+        margin-left: 0.5rem;
+        width:20px;
+    }
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width:20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: all .3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top:-7px;
+    }
+
+    /*Banner*/
+    .img-banner img {
+        width:90%;
+    }
+
+    /*Sessão Dicas*/
+
+    .sessao-dicas {
+        width:100%;
+        height: auto;
+    }
+    .dicas-img {
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 4rem;
+    }
+
+    .dicas-img img {
+        box-shadow: 2px solid black;
+        margin: 10%;
+        width: 40%;
+        height: 40vh;
+    }
+    
+    .dicas-img img:hover {
+        border: 10px solid blue;
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: 0.4s;
+    }
+
+    /*Rodapé*/
+    footer {
+        margin-top: 10rem;
+        width: 100%;
+        height: 7rem;
+        background-color: #17181b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-content p {
+        color: #a7a7a7;
+        font-size: 1.2rem;
+    }
+    
+    .redes-sociais a {
+        margin: 0 1rem;
+        color: #a7a7a7;
+        font-size: 1.3rem;
+    }
+    
+    .redes-sociais ul {
+        display: flex;
+        list-style: none;
+    }
+}
+
+
+
+/*
+.container {
+    width: 100%;
+    height: ;
+    padding: 1% 0;
+    display: flex;
+}
+
+.logo {
+    margin-left: 2rem;
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.logo a {
+    left: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.logo a:hover {
+    color: blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    visibility: visible;
+    background-color: #f4f4f4;
+}
+
+.menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.menu a {
+    display: flex;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.menu a:hover {
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: blue;
+    transition: 0.4s;
+}
+
+
+
+*/
+
+/*Formulario de Contato*/
+

@@ -1,47 +1,35 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-    <link rel=stylesheet type=text/css href="src/styles.css">
-    <meta http-equiv="X-U-A  compatible" content="ie=edge-" />
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="styles.css">
     <title>Livraria do Jean</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="logo">
-            <a>Livraria do Jean</a>
-        </div>
-        <div class="menu">
+    <section class="container">
+        <header id="header">
+            <a id="logo" href="index.html">livraria do Jean</a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile"aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
 
-            <a href="">
-                Home
-            </a>
-            <a href="#dicas">
-                Livros recomendados
-            </a>
-            <a href="">
-                Livros mais vendidos
-            </a>
-            <a href="">
-                Contatos
-            </a>
-            <a href="">
-                Sobre
-            </a>
+                <ul id="menu"role="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Livros recomendados</a></li>
+                    <li><a href="#">Livros mais vendidos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="img-banner">
+                <img src="/img/banner-livros.jpg" alt="Banner de livro">
         </div>
-        <!--menu-->
-    </header>
-    <!--container-->
-
-    <section class="img-banner">
-        <div>
-            <img src="/img/banner-livros.jpg" alt="Banner de livro">
-        </div>
-    </section>
-    <!--img-banner-->
-
+        <!--img-banner-->
     <section class="sessao-dicas" id="dicas">
         <h1>Dicas de Leitura</h1>
         <div class="dicas-img">
@@ -78,6 +66,8 @@
     </section>
     <!--sessao-dicas-->
 
+
+
     <footer class="footer">
         <div class="footer-content">
             <p>
@@ -100,8 +90,8 @@
         <!--footer-content-->
     </footer>
     <!--footer-->
-
+</section>
+<!--Container-->
 </body>
-
-
+<script src="script.js"></script>
 </html>
