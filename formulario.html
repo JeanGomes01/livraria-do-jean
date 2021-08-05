@@ -1,12 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel=stylesheet href="styles.css">
+    <title>Livraria do Jean</title>
 </head>
-<body>
-    
+
+<body class="body-formulario">
+    <section class="container">
+        <header id="header">
+            <a id="logo" href="index.html">livraria do Jean</a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile"aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+
+                <ul id="menu"role="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Livros recomendados</a></li>
+                    <li><a href="#">Livros mais vendidos</a></li>
+                    <li><a href="formulario.html">Contato</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="container-formulario">
+            <form action="" class="form-field">
+                <fieldset >
+                    <legend class="titulo-form"><b>Formulário de Cadastro</b></legend>
+                    </br>
+                    <div class="inpuBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label class="label-input" for="nome">Nome completo</label>
+                    </div>
+                    </br>
+                    <div class="inpuBox">
+                        <input type="email" name="email" id="email" class="inputUser" required>
+                        <label class="label-input" for="email">Email</label>
+                    </div>
+                    </br>
+                    <div class="inpuBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label class="label-input" for="telefone">Telefone</label>
+                    </div>              
+                    </br>
+                    <div class="inpuBox">
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                        <label class="label-input" for="cidade">Mensagem</label>
+                    </div>
+                    </br>
+                    <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+        </section>
+
+
+
+        <footer class="footer">
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2019 - Todos os direitos reservados
+            </p>
+            <div class="redes-sociais">
+                <ul>
+                    <li><a href="https://www.facebook.com/jeangomes13/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/jean_gms/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/Jean_gms01" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+            <!--social-list-->
+
+        </div>
+        <!--footer-content-->
+    </footer>
+    <!--footer-->
+</section>
+<!--Container-->
 </body>
+<script src="script.js"></script>
 </html>
